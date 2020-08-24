@@ -1,0 +1,16 @@
+﻿<Window x:Class="PowerOfLaw.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PowerOfLaw"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBox TextAlignment="Center" Name="InputPath" Text="Введите путь до папки (Дважды кликните, чтобы указать путь в проводнике)" MouseDoubleClick="ShowDialog" />
+        <Button Content="Редактировать people.txt" Click="ShowPeopleWindow" />
+        <Button Content="Редактировать tech.txt" Click="ShowTechWindow" />
+        <Button Content="Редактировать armors.txt" Click="ShowArmorsWindow" />
+        <Button Content="Редактировать weapons.txt" Click="ShowWeaponsWindow" />
+    </StackPanel>
+</Window>
